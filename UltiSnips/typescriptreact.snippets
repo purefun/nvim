@@ -1,0 +1,76 @@
+snippet 'eui form row'
+<EuiFormRow
+  label="${1:Text field}"
+  helpText="${2:I am some friendly help text.}"
+>
+  <EuiFieldText />
+</EuiFormRow>
+endsnippet
+
+snippet 'import react'
+import React from 'react'
+endsnippet
+
+
+snippet 'import some'
+import $1 from '$2'
+endsnippet
+
+snippet 'export const'
+export const ${1:name} = $2
+endsnippet
+
+snippet 'export default function'
+export default function ${1:name}() {
+  $0
+}
+endsnippet
+
+snippet 'jsx style'
+<style jsx>{\`
+  $0
+\`}</style>
+endsnippet
+
+snippet 'it (jest)' "description"
+it('$1', async () => {
+  $2
+})
+endsnippet
+
+snippet 'after-each (jest)' "description"
+afterEach(async () => {
+  $1
+})
+endsnippet
+
+snippet 'before-all (jest)' "description"
+beforeAll(async () => {
+  $1
+})
+endsnippet
+
+# snippet 'react-fc'
+# import React from 'react'
+
+# interface Props {}
+
+# export const $1: React.FC<Props> = () => {
+#   return (
+#    <div>Hello</div>
+#   )
+# }
+# endsnippet
+
+# snippet 'react-fc-taro'
+# import React from 'react';
+# import { View } from '@tarojs/components';
+
+# interface Props {}
+
+# export const $1: React.FC<Props> = () => {
+#   return (
+#    <View>Hello</View>
+#   )
+# }
+# endsnippet

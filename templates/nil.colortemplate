@@ -1,0 +1,180 @@
+Full name:     Nil
+Short name:    nil
+Author:        Nil Lin <nil@lin.am>
+Website:       https://nil.am
+Description:   Another colorscheme bases on Nord
+License:       Public domain
+Option Prefix: dark
+Neovim:        yes
+Variant:       gui
+
+Color: dark0                  #2E3440           ~                 Black
+Color: dark1                  #3B4252           ~                 Grey
+Color: dark2                  #434C5E           ~                 Grey
+Color: dark3                  #4C566A           ~                 Grey
+Color: dark3_alt              #4C566B           ~                 Grey
+Color: dark4                  #616E88           ~                 Grey
+Color: light1                 #919AAB           ~                 Grey
+Color: light2                 #A0AABE           ~                 Grey
+Color: light3                 #B1BBCC           ~                 Grey
+Color: light4                 #D8DEE9           ~                 Grey
+Color: cyan1                  #8FBCBB           ~                 Cyan
+Color: cyan2                  #88C0D0           ~                 Cyan
+Color: blue1                  #81A1C1           ~                 Blue
+Color: blue2                  #5E81AC           ~                 Blue
+Color: red                    #BF616A           ~                 Brown
+Color: orange                 #D08770           ~                 Lightred
+Color: yellow                 #EBCB8B           ~                 Yellow
+Color: green                  #A3BE8C           ~                 Green
+Color: magenta                #B48EAD           ~                 DarkMagenta
+
+; Group                       Foreground        Background        Attributes
+
+; UI ---------------------------------------------------------------------------
+
+Normal                        light3            none
+LineNr                        dark3             none
+CursorLine                    none              bg
+CursorLineNr                  light3             none
+ColorColumn                   fg                dark1
+SignColumn                    light1            none
+StatusLine                    none              dark3
+StatusLineNC                  none              dark3_alt
+VertSplit                     dark3             none
+NonText                       dark3             none
+IncSearch                     dark1             green             ;t=reverse g=standout
+Search                        dark1             green
+Pmenu                         light4            dark3
+PmenuSel                      dark3             green
+Visual                        none              dark3
+; SpecialKey                  red               none
+; EndOfBuffer                 white             black
+; Terminal                    white             gray1
+; Conceal                     none              none
+; CursorColumn                white             black
+; DiffAdd                     white             black             reverse
+; DiffChange                  white             black             reverse
+; DiffDelete                  white             black             reverse
+; DiffText                    white             black             bold,reverse
+; Directory                   white             black
+; ErrorMsg                    white             black             reverse
+; FoldColumn                  white             black
+; Folded                      white             black             italic
+; MatchParen                  white             black
+; ModeMsg                     white             black
+; MoreMsg                     white             black
+; PmenuSbar                   white             black
+; PmenuThumb                  white             black
+; Question                    white             black
+; SpecialKey                  white             black
+; SpellBad                    white             black             s=red
+; SpellCap                    white             black             s=blue
+; SpellLocal                  white             black             s=magenta
+; SpellRare                   white             black             s=cyan reverse
+; TabLine                     white             black
+; TabLineFill                 white             black
+; TabLineSel                  white             black
+; Title                       white             black
+; VisualNOS                   white             black
+; WarningMsg                  white             black
+; WildMenu                    white             black
+; Error                       white             black             reverse
+; Ignore                      white             none
+; PreProc                     white             none
+; Todo                        white             none
+; Type                        white             none
+; Underlined                  white             none
+; CursorIM                    none              fg
+
+; Language Base Groups ---------------------------------------------------------
+
+Boolean                       blue1             none
+Character                     green             none
+Comment                       dark4             none
+Conditional                   blue1             none
+Constant                      light4            none
+Define                        blue1             none
+Delimiter                     blue1             none
+Exception                     blue1             none
+Float                         magenta           none
+Function                      cyan2             none
+Identifier                    light4            none
+Include                       blue1             none
+Keyword                       blue1             none
+Label                         blue1             none
+Number                        magenta           none
+Operator                      blue1             none
+PreProc                       blue1             none
+Repeat                        blue1             none
+Special                       magenta           none
+SpecialChar                   yellow            none
+SpecialComment                cyan2             none
+Statement                     blue1             none
+StorageClass                  blue1             none
+String                        green             none
+Structure                     blue1             none
+Tag                           light4            none
+Todo                          yellow            none
+Type                          blue1             none
+Typedef                       blue1             none
+
+; Quickfix ---------------------------------------------------------------------
+
+QuickFixLine                  none              dark4
+qfFileName                    blue1             none
+
+; Treesitter -------------------------------------------------------------------
+
+TSVariable                    light4            none
+TSProperty                    blue2             none
+TSConditional                 magenta           none
+TSParameter                   yellow            none
+
+; coc.nvim ---------------------------------------------------------------------
+
+CocErrorSign                  red               none
+CocWarningSign                yellow            none
+CocHighlightText              none              dark3
+; CocLocationLine               none              orange
+
+; airblade/vim-gitgutter -------------------------------------------------------
+
+GitGutterAdd                  green             none
+GitGutterChange               blue1             none
+GitGutterDelete               red               none
+
+; defx -------------------------------------------------------------------------
+
+Defx_filename_root            yellow            none
+Defx_filename_directory       cyan2             none
+
+; FIXME filename color is fg, change it
+; Defx_filename                 red               blue1
+; Defx_filename_root_maker
+
+; Floaterm ---------------------------------------------------------------------
+
+FloatermBorder                dark1             dark1
+Floaterm                      none              dark1
+
+; Telescope --------------------------------------------------------------------
+; https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.vim
+
+TelescopeSelection            none              dark4
+; TelescopeSelectionCaret 
+; TelescopeMultiSelection 
+; TelescopeNormal               none              dark1
+; TelescopeBorder               dark1             dark1
+; TelescopePromptBorder         light1            dark1
+; TelescopePreviewNormal        none              dark2
+; TelescopePreviewBorder        dark2             dark2
+; TelescopeResultsBorder  
+; TelescopeMatching       
+; TelescopePromptPrefix   
+
+; includes --------------------------------------------------------------------
+
+Include: _term.colortemplate
+Include: _colors_lua.colortemplate
+
+; vim: ft=colortemplate fdm=marker cc=30,48,66 et ts=2 sw=2

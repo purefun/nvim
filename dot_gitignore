@@ -1,0 +1,4 @@
+.netrwhist
+node_modules/
+*.pyc
+secrets.vim

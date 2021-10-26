@@ -1,0 +1,59 @@
+{
+  "prettier.statusItemText": "P",
+  "eslint.format.enable": true,
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.floatActions": false,
+  "coc.preferences.formatOnSaveFiletypes": ["java", "go", "typescript", "typescriptreact"],
+  "coc.preferences.promptInput": false,
+  "coc.preferences.promptWorkspaceEdit": false,
+  "coc.preferences.useQuickfixForLocations": true,
+
+  "codeLens.enable": false,
+
+  "diagnostic.enableHighlightLineNumber": false,
+  "diagnostic.errorSign": "E",
+  "diagnostic.hintSign": "H",
+  "diagnostic.infoSign": "I",
+  "diagnostic.warningSign": "W",
+
+  "git.enableGutters": false,
+  "git.splitWindowCommand": "below sp",
+
+  "http.proxy": "http://localhost:6152",
+
+  "imselect.enableFloating": false,
+  "imselect.enableStatusItem": false,
+
+  "javascript.suggestionActions.enabled": false,
+
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.format.enabled": true,
+  "java.format.settings.url":"https://gist.githubusercontent.com/purefun/5c168bafd981c4203ad0dba666928b0b/raw/d1345f26e471ef0babf5ea97b81e135e37aca851/java_code_formatter.xml",
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  "sql.database": "postgresql",
+
+  // "diagnostic.errorSign": "",
+  // "diagnostic.hintSign": "",
+  // "diagnostic.infoSign": "",
+  // "diagnostic.warningSign": "",
+
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
+}
