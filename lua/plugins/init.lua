@@ -1,10 +1,8 @@
-local Loader = {}
-
 local packer_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.vim"
 local package_root = vim.fn.stdpath("data") .. "/site/pack"
 
-function Loader:load()
-    local plugins = require("myplugins")
+function Load()
+    local plugins = require("plugins.plugins")
     Add_packer_if_needed()
     local packer = require('packer')
     Packer_init(packer)
@@ -38,4 +36,4 @@ function Load_plugins(packer, plugins)
     end)
 end
 
-return Loader
+Load()

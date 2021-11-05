@@ -21,21 +21,21 @@ return {
   'sheerun/vim-polyglot',
   'tyru/open-browser.vim',
   'ianva/vim-youdao-translater',
-  'NTBBloodbath/rest.nvim',
   'fatih/vim-go',
   'buoto/gotests-vim',
+  -- 'thinca/vim-quickrun',
   'norcalli/nvim-colorizer.lua',
-  {
-    'mattn/vim-gist',
-    requires = { 'mattn/webapi-vim' },
-  },
-  { 'nvim-telescope/telescope.nvim',
-    requires = {
-      {'nvim-lua/plenary.nvim'},
-      {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'},
-    }
-  },
+  { 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' },
+  { 'mattn/vim-gist', requires = 'mattn/webapi-vim', },
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
   { 'Shougo/defx.nvim', run = ':UpdateRemotePlugins' },
   { 'neoclide/coc.nvim', branch = 'release' },
+  {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      {'nvim-lua/plenary.nvim'},
+      {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'},
+      {'camgraff/telescope-tmux.nvim'},
+    }
+  },
 }

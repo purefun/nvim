@@ -97,6 +97,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/gv.vim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/harpoon"
+  },
   ["lush.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/lush.nvim"
@@ -133,13 +137,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
-  ["rest.nvim"] = {
-    loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/rest.nvim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+  },
+  ["telescope-tmux.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-tmux.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -176,6 +180,10 @@ _G.packer_plugins = {
   ["vim-polyglot"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-polyglot"
+  },
+  ["vim-quickrun"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-quickrun"
   },
   ["vim-repeat"] = {
     loaded = true,

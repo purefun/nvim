@@ -2,4 +2,4 @@ if &runtimepath !~ 'nvim-colorizer.lua'
   finish
 endif
 
-lua require("plugins.colorizer")
+lua require("plugins.config.colorizer")

@@ -2,4 +2,4 @@ if &runtimepath !~ 'galaxyline.nvim'
   finish
 endif
 
-lua require('plugins.galaxyline')
+lua require('plugins.config.galaxyline')

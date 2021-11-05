@@ -2,7 +2,7 @@ if &runtimepath !~ 'telescope'
   finish
 endif
 
-lua require('plugins.telescope')
+lua require('plugins.config.telescope')
 
 " nnoremap <silent>sf :Telescope find_files<cr>
 nnoremap <silent>sf :lua require('telescope.builtin').find_files()<CR>
