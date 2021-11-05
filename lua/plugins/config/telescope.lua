@@ -9,7 +9,7 @@ require('telescope').setup{
     },
   },
   pickers = {
-    find_files = {
+    git_files = {
       prompt_title = '',
       theme = 'dropdown',
       previewer = false,

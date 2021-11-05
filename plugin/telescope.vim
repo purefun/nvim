@@ -5,7 +5,7 @@ endif
 lua require('plugins.config.telescope')
 
 " nnoremap <silent>sf :Telescope find_files<cr>
-nnoremap <silent>sf :lua require('telescope.builtin').find_files()<CR>
+nnoremap <silent>sf :lua require('telescope.builtin').git_files()<CR>
 nnoremap <silent>so :Telescope oldfiles<cr>
 nnoremap <silent>sl :Telescope current_buffer_fuzzy_find<cr>
 nnoremap <silent>sg :Telescope live_grep<cr>
