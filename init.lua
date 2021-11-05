@@ -1,6 +1,6 @@
 require 'options'
-require 'settings'
 require 'mappings'
 require 'autocmd'
-require 'plugins'
 require 'reload'
+require 'settings'
+require 'plugins'

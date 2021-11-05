@@ -1,5 +1,7 @@
 local keymap = vim.api.nvim_set_keymap
 
+vim.g.mapleader = ' '
+
 -- save buffer
 
 keymap('n', '<C-S>', [[<cmd>w!<cr>]], { noremap = true })

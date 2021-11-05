@@ -1,3 +1,5 @@
+---@diagnostic disable: undefined-global
+
 local lush = require('lush')
 local hsl = lush.hsl
 
@@ -32,7 +34,7 @@ local theme = lush(function()
     -- vim ui --
 
     CursorLine   { fg = nil,    bg = nil }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-    Visual       { fg = nil,    bg = gray3  }, -- Visual mode selection
+    Visual       { fg = nil,    bg = gray4  }, -- Visual mode selection
     LineNr       { fg = gray4,  bg = nil    },
     CursorLineNr { fg = gray9,  bg = nil    },
     Search       { fg = gray0,  bg = green  },
@@ -156,6 +158,10 @@ local theme = lush(function()
     Debug          { fg = cyan, bg = nil               }, --    debugging statements
 
     Title        { fg = purple, bg = nil }, -- titles for output from ":set all", ":autocmd" etc.
+
+    -- Telescope prompt count number link this
+    NonText { fg = gray7 },
+
     -- Conceal      { }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     -- Cursor       { }, -- character under the cursor
     -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
@@ -268,6 +274,13 @@ local theme = lush(function()
     -- LspReferenceText                  { }, -- used for highlighting "text" references
     -- LspReferenceRead                  { }, -- used for highlighting "read" references
     -- LspReferenceWrite                 { }, -- used for highlighting "write" references
+
+    -- https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.vim
+    TelescopeNormal         { bg = gray3 },
+    TelescopeResultsNumber  { fg = gray4, bg = green },
+    TelescopePreviewNormal  { bg = gray3 },
+    -- TelescopeResultsDiffUntracked { fg = green },
+    -- TelescopePreviewHyphen { fg = green },
   }
 end)
 
