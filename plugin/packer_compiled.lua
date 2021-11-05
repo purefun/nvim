@@ -154,10 +154,20 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope-coc.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-coc.nvim",
+    url = "https://github.com/fannheyward/telescope-coc.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
+  ["telescope-node-modules.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-node-modules.nvim",
+    url = "https://github.com/nvim-telescope/telescope-node-modules.nvim"
   },
   ["telescope-tmux.nvim"] = {
     loaded = true,

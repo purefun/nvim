@@ -279,6 +279,7 @@ local theme = lush(function()
     TelescopeNormal         { bg = gray3 },
     TelescopeBorder         { bg = gray3, fg = gray3 }, -- hide border
     TelescopeResultsNumber  { fg = gray4, bg = green },
+    TelescopeResultsLineNr  { fg = cyan },
     TelescopePreviewNormal  { bg = gray3 },
     -- TelescopeResultsDiffUntracked { fg = green },
     -- TelescopePreviewHyphen { fg = green },

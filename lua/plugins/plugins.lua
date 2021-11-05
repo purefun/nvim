@@ -36,6 +36,8 @@ return {
       {'nvim-lua/plenary.nvim'},
       {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'},
       {'camgraff/telescope-tmux.nvim'},
+      {'nvim-telescope/telescope-node-modules.nvim'},
+      {'fannheyward/telescope-coc.nvim'},
     }
   },
 }

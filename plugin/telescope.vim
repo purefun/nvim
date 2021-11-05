@@ -15,6 +15,7 @@ nnoremap <silent>sq :Telescope quickfix<cr>
 nnoremap <silent>sc :Telescope commands<cr>
 nnoremap <silent>se :Telescope tmux windows<cr>
 nnoremap <silent>sp :Telescope tmux sessions<cr>
+nnoremap <silent>sn :Telescope node_modules list<cr>
 
 " TODO
 " nnoremap <silent>sd :Denite -resume<cr>
