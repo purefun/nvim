@@ -38,6 +38,12 @@
     }
   ],
   "sql.database": "postgresql",
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.workspace.library": {
+    "/usr/local/nvim/share/nvim/runtime/lua": true,
+    "/usr/local/nvim/share/nvim/runtime/lua/vim": true,
+    "/usr/local/nvim/share/nvim/runtime/lua/vim/lsp": true
+  },
 
   // "diagnostic.errorSign": "",
   // "diagnostic.hintSign": "",

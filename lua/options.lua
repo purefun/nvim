@@ -1,5 +1,3 @@
-local vim = vim
-
 local opt = vim.opt
 
 opt.autoread = true
@@ -45,3 +43,4 @@ opt.tabstop = 2
 opt.termguicolors = true
 opt.updatetime = 100
 opt.wildignore = vim.o.wildignore .. 'node_modules/**'
+opt.completeopt = 'menu,menuone,noselect'
