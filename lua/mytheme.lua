@@ -277,6 +277,7 @@ local theme = lush(function()
 
     -- https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.vim
     TelescopeNormal         { bg = gray3 },
+    TelescopeBorder         { bg = gray3, fg = gray3 }, -- hide border
     TelescopeResultsNumber  { fg = gray4, bg = green },
     TelescopePreviewNormal  { bg = gray3 },
     -- TelescopeResultsDiffUntracked { fg = green },

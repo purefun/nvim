@@ -1,9 +1,9 @@
 require('telescope').setup{
   defaults = {
-    borderchars = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
     selection_caret = '  ',
     sorting_strategy = 'ascending',
-    prompt_prefix = '   ',
+    -- prompt_prefix = '   ',
+    prompt_prefix = ' 😎 ',
     layout_config = {
       mirror = false,
       prompt_position = 'top',
@@ -11,7 +11,6 @@ require('telescope').setup{
   },
   pickers = {
     find_files = {
-      borderchars = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
       prompt_title = '',
       theme = 'dropdown',
       previewer = false,
