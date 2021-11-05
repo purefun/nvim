@@ -23,7 +23,7 @@ return {
   'ianva/vim-youdao-translater',
   'fatih/vim-go',
   'buoto/gotests-vim',
-  -- 'thinca/vim-quickrun',
+  'thinca/vim-quickrun',
   'norcalli/nvim-colorizer.lua',
   { 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' },
   { 'mattn/vim-gist', requires = 'mattn/webapi-vim', },
