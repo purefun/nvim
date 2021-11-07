@@ -9,6 +9,15 @@ require('telescope').setup{
     },
   },
   pickers = {
+    find_files = {
+      prompt_title = '',
+      theme = 'dropdown',
+      previewer = false,
+      layout_config = {
+        width = 80,
+        height = 0.7
+      }
+    },
     git_files = {
       prompt_title = '',
       theme = 'dropdown',
@@ -40,3 +49,17 @@ require('telescope').setup{
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('node_modules')
 require('telescope').load_extension('coc')
+
+
+vim.api.nvim_set_keymap('n', 'sf', '<CMD>lua require\'plugins.config.telescope\'.project_files()<CR>', {noremap = true, silent = true})
+
+local M = {}
+
+M.project_files = function()
+  local opts = {} -- define here if you want to define something
+  local ok = pcall(require'telescope.builtin'.git_files, opts)
+  if not ok then require'telescope.builtin'.find_files(opts) end
+end
+
+return M
+
