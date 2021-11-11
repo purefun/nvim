@@ -73,6 +73,7 @@ require('telescope').load_extension('fzf')
 require('telescope').load_extension('node_modules')
 require('telescope').load_extension('coc')
 require('telescope').load_extension('tmuxinator')
+require('telescope').load_extension('ghq')
 
 local M = {}
 

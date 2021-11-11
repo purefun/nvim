@@ -41,6 +41,7 @@ return {
       {'danielpieper/telescope-tmuxinator.nvim'},
       {'fannheyward/telescope-coc.nvim'},
       {'edolphin-ydf/goimpl.nvim'},
+      {'nvim-telescope/telescope-ghq.nvim'},
     }
   },
 }

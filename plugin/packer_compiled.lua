@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
+  ["telescope-ghq.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-ghq.nvim",
+    url = "https://github.com/nvim-telescope/telescope-ghq.nvim"
+  },
   ["telescope-node-modules.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-node-modules.nvim",
