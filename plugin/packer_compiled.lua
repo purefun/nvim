@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/gotests-vim",
     url = "https://github.com/buoto/gotests-vim"
   },
+  ["goyo.vim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    url = "https://github.com/junegunn/goyo.vim"
+  },
   ["gv.vim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/gv.vim",
@@ -169,10 +174,10 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-node-modules.nvim",
     url = "https://github.com/nvim-telescope/telescope-node-modules.nvim"
   },
-  ["telescope-tmux.nvim"] = {
+  ["telescope-tmuxinator.nvim"] = {
     loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-tmux.nvim",
-    url = "https://github.com/camgraff/telescope-tmux.nvim"
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-tmuxinator.nvim",
+    url = "https://github.com/danielpieper/telescope-tmuxinator.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

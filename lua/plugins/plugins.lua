@@ -1,5 +1,6 @@
 return {
   "wbthomason/packer.nvim",
+  "junegunn/goyo.vim",
   "neovim/nvim-lspconfig",
   "kyazdani42/nvim-web-devicons",
   'voldikss/vim-floaterm',
@@ -35,8 +36,8 @@ return {
     requires = {
       {'nvim-lua/plenary.nvim'},
       {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'},
-      {'camgraff/telescope-tmux.nvim'},
       {'nvim-telescope/telescope-node-modules.nvim'},
+      {'danielpieper/telescope-tmuxinator.nvim'},
       {'fannheyward/telescope-coc.nvim'},
     }
   },

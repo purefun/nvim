@@ -4,9 +4,8 @@ endif
 
 lua require('plugins.config.telescope')
 
-" nnoremap <silent>sf :Telescope find_files<cr>
-" nnoremap <silent>sf :lua require('telescope.builtin').git_files()<CR>
-" nnoremap <silent>sp :lua require('telescope.builtin').find_files()<CR>
+nnoremap <silent>sf :lua require('plugins.config.telescope').project_files()<cr>
+nnoremap <silent>sp :lua require('plugins.config.telescope_tmux').windows()<cr>
 nnoremap <silent>so :Telescope oldfiles<cr>
 nnoremap <silent>sl :Telescope current_buffer_fuzzy_find<cr>
 nnoremap <silent>sg :Telescope live_grep<cr>
@@ -15,11 +14,11 @@ nnoremap <silent>sb :Telescope buffers<cr>
 nnoremap <silent>sq :Telescope quickfix<cr>
 nnoremap <silent>sc :Telescope commands<cr>
 nnoremap <silent>se :Telescope tmux windows<cr>
-" nnoremap <silent>sp :Telescope tmux sessions<cr>
 nnoremap <silent>sn :Telescope node_modules list<cr>
+nnoremap <silent>sr :Telescope resume<cr>
+nnoremap <silent>sm :lua require('telescope').extensions.tmuxinator.projects(require('telescope.themes').get_dropdown({}))<cr>
 
 " TODO
-" nnoremap <silent>sd :Denite -resume<cr>
 " nnoremap <silent>ss :<c-u>set operatorfunc=GrepOperator<cr>g@
 " vnoremap <silent>ss :<c-u>call GrepOperator(visualmode())<cr>
 

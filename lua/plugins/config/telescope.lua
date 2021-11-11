@@ -1,36 +1,57 @@
+local layout = {
+    width = 80,
+    height = 0.7,
+    prompt_position = 'top',
+}
+
 require('telescope').setup{
   defaults = {
     selection_caret = '  ',
     sorting_strategy = 'ascending',
     prompt_prefix = ' 😎 ',
-    layout_config = {
-      mirror = false,
-      prompt_position = 'top',
-    },
+    layout_config = layout,
   },
   pickers = {
     find_files = {
       prompt_title = '',
       theme = 'dropdown',
       previewer = false,
-      layout_config = {
-        width = 80,
-        height = 0.7
-      }
+      layout_config = layout,
     },
     git_files = {
       prompt_title = '',
       theme = 'dropdown',
       previewer = false,
-      layout_config = {
-        width = 80,
-        height = 0.7
-      }
+      layout_config = layout,
     },
     live_grep = {
       prompt_title = '',
       results_title = '',
       preview_title = '',
+      layout_config = {
+        width = 0.9,
+        height = 0.9,
+      },
+    },
+    buffers = {
+      theme = 'dropdown',
+      previewer = false,
+      layout_config = layout,
+    },
+    oldfiles = {
+      theme = 'dropdown',
+      previewer = false,
+      layout_config = {
+        width = 0.9,
+        height = 0.7,
+        prompt_position = 'top',
+      },
+    },
+    grep_string = {
+      layout_config = {
+        width = 0.9,
+        height = 0.9,
+      },
     },
   }, -- end of pickers
 
@@ -40,8 +61,7 @@ require('telescope').setup{
       override_generic_sorter = true,  -- override the generic sorter
       override_file_sorter = true,     -- override the file sorter
       case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-                                       -- the default case_mode is "smart_case"
-    }
+    },
   }
 }
 -- To get fzf loaded and working with telescope, you need to call
@@ -49,9 +69,7 @@ require('telescope').setup{
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('node_modules')
 require('telescope').load_extension('coc')
-
-
-vim.api.nvim_set_keymap('n', 'sf', '<CMD>lua require\'plugins.config.telescope\'.project_files()<CR>', {noremap = true, silent = true})
+require('telescope').load_extension('tmuxinator')
 
 local M = {}
 
