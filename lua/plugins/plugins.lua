@@ -26,6 +26,7 @@ return {
   'buoto/gotests-vim',
   'thinca/vim-quickrun',
   'norcalli/nvim-colorizer.lua',
+  'mfussenegger/nvim-dap',
   { 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' },
   { 'mattn/vim-gist', requires = 'mattn/webapi-vim', },
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
@@ -39,6 +40,7 @@ return {
       {'nvim-telescope/telescope-node-modules.nvim'},
       {'danielpieper/telescope-tmuxinator.nvim'},
       {'fannheyward/telescope-coc.nvim'},
+      {'edolphin-ydf/goimpl.nvim'},
     }
   },
 }

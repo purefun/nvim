@@ -13,7 +13,6 @@ nnoremap <silent>sw :Telescope grep_string<cr>
 nnoremap <silent>sb :Telescope buffers<cr>
 nnoremap <silent>sq :Telescope quickfix<cr>
 nnoremap <silent>sc :Telescope commands<cr>
-nnoremap <silent>se :Telescope tmux windows<cr>
 nnoremap <silent>sn :Telescope node_modules list<cr>
 nnoremap <silent>sr :Telescope resume<cr>
 nnoremap <silent>sm :lua require('telescope').extensions.tmuxinator.projects(require('telescope.themes').get_dropdown({}))<cr>

@@ -62,6 +62,9 @@ require('telescope').setup{
       override_file_sorter = true,     -- override the file sorter
       case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
     },
+    tmuxinator = {
+      disable_icons = true,
+    }
   }
 }
 -- To get fzf loaded and working with telescope, you need to call
