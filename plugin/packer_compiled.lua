@@ -189,11 +189,6 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-node-modules.nvim",
     url = "https://github.com/nvim-telescope/telescope-node-modules.nvim"
   },
-  ["telescope-tmuxinator.nvim"] = {
-    loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-tmuxinator.nvim",
-    url = "https://github.com/danielpieper/telescope-tmuxinator.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope.nvim",
