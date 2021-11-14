@@ -1,5 +1,6 @@
 return {
   "wbthomason/packer.nvim",
+  "ggandor/lightspeed.nvim",
   "folke/zen-mode.nvim",
   "neovim/nvim-lspconfig",
   "kyazdani42/nvim-web-devicons",
