@@ -1,6 +1,6 @@
 return {
   "wbthomason/packer.nvim",
-  "junegunn/goyo.vim",
+  "folke/zen-mode.nvim",
   "neovim/nvim-lspconfig",
   "kyazdani42/nvim-web-devicons",
   'voldikss/vim-floaterm',
