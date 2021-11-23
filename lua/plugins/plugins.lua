@@ -28,6 +28,8 @@ return {
   'thinca/vim-quickrun',
   'norcalli/nvim-colorizer.lua',
   'mfussenegger/nvim-dap',
+  { 'NTBBloodbath/rest.nvim', requires = 'nvim-lua/plenary.nvim' },
+  'rcarriga/nvim-notify',
   { 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' },
   { 'mattn/vim-gist', requires = 'mattn/webapi-vim', },
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },

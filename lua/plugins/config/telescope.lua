@@ -8,8 +8,11 @@ require('telescope').setup{
   defaults = {
     selection_caret = '  ',
     sorting_strategy = 'ascending',
-    prompt_prefix = ' 😎 ',
-    layout_config = layout,
+    prompt_position = 'top',
+    prompt_prefix = '  ➔ ',
+    layout_config = {
+      prompt_position = 'top',
+    }
   },
   pickers = {
     find_files = {
@@ -31,6 +34,7 @@ require('telescope').setup{
       layout_config = {
         width = 0.9,
         height = 0.9,
+        prompt_position = 'top',
       },
     },
     buffers = {
@@ -51,6 +55,7 @@ require('telescope').setup{
       layout_config = {
         width = 0.9,
         height = 0.9,
+        prompt_position = 'top',
       },
     },
   }, -- end of pickers
