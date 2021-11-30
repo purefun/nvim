@@ -74,18 +74,22 @@ M.list = function(opts)
         local entry = actions_state.get_selected_entry()
         actions._close(prompt_bufnr, 'keepinsert')
         local dir = from_entry.path(entry)
+
         if type == 'default' then
-          require'telescope.builtin'.git_files{cwd = dir}
+          -- do nothing
         elseif type == 'horizontal' then
           vim.cmd('cd '..dir)
           print('chdir to '..dir)
         elseif type == 'vertical' then
+          vim.cmd('vnew')
           vim.cmd('lcd '..dir)
-          print('lchdir to '..dir)
+        -- C-t
         elseif type == 'tab' then
+          vim.cmd('tabnew')
           vim.cmd('tcd '..dir)
-          print('tchdir to '..dir)
         end
+
+        require'telescope.builtin'.git_files{cwd = dir}
       end)
       return true
     end,
