@@ -1,7 +1,3 @@
-if &runtimepath !~ 'coc.nvim'
-  finish
-endif
-
 let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-eslint',

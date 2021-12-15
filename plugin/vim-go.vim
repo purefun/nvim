@@ -1,7 +1,3 @@
-if &runtimepath !~ 'vim-go'
-  finish
-endif
-
 let g:go_gopls_enabled = 0
 let g:go_gopls_options = ['-remote=auto']
 let g:go_def_mode='gopls'

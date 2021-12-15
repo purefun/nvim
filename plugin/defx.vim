@@ -1,7 +1,3 @@
-if &runtimepath !~ 'defx.nvim'
-  finish
-endif
-
 nnoremap <silent>_ :Defx -search=`expand('%:p')` -show-ignored-files<CR>
 nnoremap <silent>- :Defx `expand('%:p:h')` -search=`expand('%:p')` -show-ignored-files<CR>
 nnoremap <silent><C-_> :Defx -show-ignored-files<CR>

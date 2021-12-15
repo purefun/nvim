@@ -1,7 +1,3 @@
-if &runtimepath !~ 'telescope'
-  finish
-endif
-
 lua require('plugins.config.telescope')
 
 nnoremap <silent>sf :lua require('plugins.config.telescope').project_files()<cr>

@@ -1,7 +1,3 @@
-if &runtimepath !~ 'nvim-treesitter'
-  finish
-endif
-
 lua <<EOF
 
 local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
