@@ -11,6 +11,12 @@ nnoremap <silent>sq :Telescope quickfix<cr>
 nnoremap <silent>sc :Telescope commands<cr>
 nnoremap <silent>sn :Telescope node_modules list<cr>
 nnoremap <silent>sr :Telescope resume<cr>
+" git checkout
+nnoremap <silent>sib :Telescope git_branches<cr> 
+" git log
+nnoremap <silent>sil :Telescope git_commits<cr>
+" git current buffer log
+nnoremap <silent>sic :Telescope git_bcommits<cr>
 " same as zsh ^t(show tmux sessions using fzf)
 nnoremap <silent><C-t> :lua require('plugins.config.telescope_tmux').sessions()<cr>
 

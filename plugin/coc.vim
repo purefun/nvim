@@ -43,6 +43,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+nmap gs :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 
@@ -106,6 +107,7 @@ omap af <Plug>(coc-funcobj-a)
 " coc-tsserver, coc-python are the examples of servers that support it.
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
+nunmap <C-i>
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
