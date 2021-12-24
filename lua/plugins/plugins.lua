@@ -30,6 +30,7 @@ return {
   'thinca/vim-quickrun',
   'norcalli/nvim-colorizer.lua',
   'rcarriga/nvim-notify',
+  'phaazon/hop.nvim',
   { 'windwp/nvim-spectre', requires = 'nvim-lua/plenary.nvim' },
   { 'mfussenegger/nvim-dap', requires = { 'theHamsta/nvim-dap-virtual-text', 'rcarriga/nvim-dap-ui' } },
   { 'NTBBloodbath/rest.nvim', requires = 'nvim-lua/plenary.nvim' },
