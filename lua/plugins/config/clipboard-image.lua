@@ -1,0 +1,1 @@
+require'clipboard-image'.setup{}

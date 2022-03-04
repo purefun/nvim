@@ -20,6 +20,9 @@ nnoremap <silent>sic :Telescope git_bcommits<cr>
 " same as zsh ^t(show tmux sessions using fzf)
 nnoremap <silent><C-t> :lua require('plugins.config.telescope_tmux').sessions()<cr>
 
+nnoremap shi :Octo issue list<cr>
+nnoremap shc :Octo issue create<cr>
+
 " TODO
 " nnoremap <silent>ss :<c-u>set operatorfunc=GrepOperator<cr>g@
 " vnoremap <silent>ss :<c-u>call GrepOperator(visualmode())<cr>

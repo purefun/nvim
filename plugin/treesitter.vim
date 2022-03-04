@@ -16,7 +16,7 @@ require'nvim-treesitter.configs'.setup {
     "java", "html", "json", "css", "scss", "typescript", "tsx", "toml", "vue",
     "jsonc", "yaml", "query", "jsdoc", "comment", "vim", "json5",
     -- custom
-    "http",
+    "http", "prisma",
     }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   ignore_install = {"cmake"}, -- List of parsers to ignore installing
   highlight = {

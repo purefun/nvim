@@ -1,7 +1,6 @@
 let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-eslint',
-      \ 'coc-prettier',
       \ 'coc-json',
       \ 'coc-imselect',
       \ 'coc-css',
@@ -14,7 +13,8 @@ let g:coc_global_extensions = [
       \ 'coc-xml',
       \ 'coc-sql',
       \ 'coc-styled-components',
-      \ 'coc-emmet'
+      \ 'coc-emmet',
+      \ 'coc-prisma',
       \]
 
 " Don't pass messages to |ins-completion-menu|.
@@ -111,6 +111,9 @@ nunmap <C-i>
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
+
+" issue: https://github.com/pantharshit00/coc-prisma/issues/22
+autocmd BufWritePost *.prisma call CocActionAsync('format')
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)

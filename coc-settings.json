@@ -1,9 +1,9 @@
 {
-  "prettier.statusItemText": "P",
+  // "prettier.statusItemText": "P",
   "eslint.format.enable": true,
   "eslint.autoFixOnSave": true,
   "coc.preferences.floatActions": false,
-  "coc.preferences.formatOnSaveFiletypes": ["java", "go", "typescript", "typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": ["java", "go", "typescript", "typescriptreact", "prisma"],
   "coc.preferences.promptInput": false,
   "coc.preferences.promptWorkspaceEdit": false,
   "coc.preferences.useQuickfixForLocations": true,
@@ -51,6 +51,26 @@
   // "diagnostic.warningSign": "",
 
   "languageserver": {
+    // "prisma": {
+    //   "filetypes": ["prisma"],
+    //   "trace.server": "verbose"
+    // },
+    "liquid": {
+      "command": "theme-check-language-server",
+      "filetypes": [
+        "liquid"
+      ],
+      "settings": {
+        "themeCheck": {
+          "checkOnOpen": true,
+          "checkOnChange": true,
+          "checkOnSave": true
+        }
+      },
+      "rootPatterns": [
+        ".theme-check.yml"
+      ]
+    },
     "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],

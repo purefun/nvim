@@ -1,3 +1,5 @@
+vim.g['polyglot_disabled'] = {}
+
 require 'options'
 require 'mappings'
 require 'autocmd'
