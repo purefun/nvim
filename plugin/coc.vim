@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
       \ 'coc-styled-components',
       \ 'coc-emmet',
       \ 'coc-prisma',
+      \ 'coc-prettier',
       \]
 
 " Don't pass messages to |ins-completion-menu|.

@@ -1,5 +1,6 @@
 {
   // "prettier.statusItemText": "P",
+  "prettier.enable": true,
   "eslint.format.enable": true,
   "eslint.autoFixOnSave": true,
   "coc.preferences.floatActions": false,
@@ -7,8 +8,9 @@
   "coc.preferences.promptInput": false,
   "coc.preferences.promptWorkspaceEdit": false,
   "coc.preferences.useQuickfixForLocations": true,
-
   "codeLens.enable": false,
+
+  "typescript.autoClosingTags": true,
 
   "diagnostic.enableHighlightLineNumber": false,
   "diagnostic.errorSign": "E",
