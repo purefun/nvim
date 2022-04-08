@@ -1,2 +1,2 @@
-nnoremap <CR> :lua require('rest-nvim').run()<CR>
-nnoremap <Tab> :lua require('rest-nvim').run(true)<CR>
+nnoremap <buffer> <CR> :lua require('rest-nvim').run()<CR>
+nnoremap <buffer> <Tab> :lua require('rest-nvim').run(true)<CR>
