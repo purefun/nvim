@@ -1,5 +1,6 @@
 return {
   "wbthomason/packer.nvim",
+  "kyazdani42/nvim-tree.lua",
   "ggandor/lightspeed.nvim",
   "folke/zen-mode.nvim",
   "neovim/nvim-lspconfig",
