@@ -1,4 +1,9 @@
-local Loader = {}
+local Loader = {vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])}
 
 local packer_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.vim"
 local package_root = vim.fn.stdpath("data") .. "/site/pack"
