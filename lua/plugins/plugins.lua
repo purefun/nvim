@@ -1,5 +1,10 @@
 return {
   "wbthomason/packer.nvim",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "hrsh7th/cmp-cmdline",
+  "hrsh7th/nvim-cmp",
   "kyazdani42/nvim-tree.lua",
   "ggandor/lightspeed.nvim",
   "folke/zen-mode.nvim",
