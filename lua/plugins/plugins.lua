@@ -41,7 +41,7 @@ return {
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
   { 'Shougo/defx.nvim', run = ':UpdateRemotePlugins' },
   { 'obaland/vfiler.vim' },
-  { 'neoclide/coc.nvim', branch = 'release' },
+  -- { 'neoclide/coc.nvim', branch = 'release' },
   {
     'nvim-telescope/telescope.nvim',
     requires = {
