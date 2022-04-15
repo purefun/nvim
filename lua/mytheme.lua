@@ -50,8 +50,8 @@ local theme = lush(function()
     PmenuThumb   { fg = nil,    bg = nil,   }, -- Popup menu: Thumb of the scrollbar.
     NormalFloat  { fg = nil,    bg = gray4  }, -- Normal text in floating windows.
     VertSplit    { fg = gray3,  bg = nil    }, -- the column separating vertically split windows
-    StatusLine   { fg = fg,     bg = gray3  }, -- status line of current window
-    StatusLineNC { fg = fg,     bg = gray3  }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    -- StatusLine   { fg = fg,     bg = gray3  }, -- status line of current window
+    -- StatusLineNC { fg = fg,     bg = gray3  }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     SignColumn   { fg = nil,    bg = nil    }, -- column where |signs| are displayed
     FoldColumn   { bg = nil,    fg = gray3  }, -- 'foldcolumn'
     Folded       { fg = nil,    bg = gray4  }, -- line used for closed folds
@@ -63,24 +63,24 @@ local theme = lush(function()
 
     -- galaxyline --
 
-    GalaxylineFilename         { bg = green, fg = gray2  },
-    GalaxylineFilenameInactive { bg = gray8, fg = gray3  },
-    GalaxylineCWD              { bg = gray5, fg = gray9  },
-    GalaxylineGitBranch        { bg = gray4, fg = gray9  },
+    -- GalaxylineFilename         { bg = green, fg = gray2  },
+    -- GalaxylineFilenameInactive { bg = gray8, fg = gray3  },
+    -- GalaxylineCWD              { bg = gray5, fg = gray9  },
+    -- GalaxylineGitBranch        { bg = gray4, fg = gray9  },
 
-    GalaxylineDiffAdd          { bg = gray4, fg = green  },
-    GalaxylineDiffModified     { bg = gray4, fg = yellow },
-    GalaxylineDiffRemove       { bg = gray4, fg = pink   },
+    -- GalaxylineDiffAdd          { bg = gray4, fg = green  },
+    -- GalaxylineDiffModified     { bg = gray4, fg = yellow },
+    -- GalaxylineDiffRemove       { bg = gray4, fg = pink   },
 
-    GalaxylineCocStatus        { bg = gray3, fg = pink   },
+    -- GalaxylineCocStatus        { bg = gray3, fg = pink   },
 
-    GalaxylineDiagnositcError  { bg = gray3, fg = pink   },
-    GalaxylineDiagnositcWarn   { bg = gray3, fg = yellow },
-    GalaxylineDiagnositcHint   { bg = gray3, fg = cyan   },
-    GalaxylineDiagnositcInfo   { bg = gray3, fg = gray9  },
+    -- GalaxylineDiagnositcError  { bg = gray3, fg = pink   },
+    -- GalaxylineDiagnositcWarn   { bg = gray3, fg = yellow },
+    -- GalaxylineDiagnositcHint   { bg = gray3, fg = cyan   },
+    -- GalaxylineDiagnositcInfo   { bg = gray3, fg = gray9  },
 
-    GalaxylineLineInfo         { bg = gray4, fg = gray9  },
-    GalaxylineLineFiletype     { bg = gray5, fg = gray9  },
+    -- GalaxylineLineInfo         { bg = gray4, fg = gray9  },
+    -- GalaxylineLineFiletype     { bg = gray5, fg = gray9  },
 
     -- coc.nvim --
 

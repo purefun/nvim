@@ -5,13 +5,13 @@ local on_attach = function(client, bufnr)
 end
 
 
--- typescript
+-- repo: https://github.com/typescript-language-server/typescript-language-server
 -- install: yarn global add typescript typescript-language-server
 require('lspconfig').tsserver.setup {
   on_attach = on_attach,
 }
 
--- lua
+-- repo: https://github.com/sumneko/lua-language-server
 -- install: brew install lua-language-server
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")

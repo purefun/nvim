@@ -6,7 +6,7 @@ return {
   "neovim/nvim-lspconfig",
   "kyazdani42/nvim-web-devicons",
   'voldikss/vim-floaterm',
-  'glepnir/galaxyline.nvim',
+  -- 'glepnir/galaxyline.nvim',
   'rktjmp/lush.nvim',
   'liuchengxu/vista.vim',
   'tpope/vim-commentary',
@@ -41,6 +41,7 @@ return {
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
   { 'Shougo/defx.nvim', run = ':UpdateRemotePlugins' },
   { 'obaland/vfiler.vim' },
+  { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } },
   -- { 'neoclide/coc.nvim', branch = 'release' },
   {
     'nvim-telescope/telescope.nvim',

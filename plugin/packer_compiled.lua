@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
-  ["galaxyline.nvim"] = {
-    loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
-    url = "https://github.com/glepnir/galaxyline.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -128,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
     url = "https://github.com/ggandor/lightspeed.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["lush.nvim"] = {
     loaded = true,
