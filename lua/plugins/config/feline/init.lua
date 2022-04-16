@@ -4,6 +4,7 @@ local git_diff = require('plugins.config.feline.git_diff')
 local diagnostics = require('plugins.config.feline.diagnostics')
 local lsp = require('plugins.config.feline.lsp')
 local line_count = require('plugins.config.feline.line_count')
+local position = require('plugins.config.feline.position')
 
 local colors = {
   bg = '#454d5e',
@@ -36,12 +37,13 @@ components.active[1][5] = git_diff.removed
 components.active[1][6] = diagnostics.error
 components.active[1][7] = diagnostics.warning
 components.active[1][8] = diagnostics.hint
-components.active[1][9] = diagnostics.info
+components.active[1][10] = diagnostics.info
 
 -- RIGHT
 
 components.active[3][1] = lsp.name
-components.active[3][2] = line_count
+components.active[3][2] = position
+components.active[3][3] = line_count
 
 
 components.inactive = components.active
