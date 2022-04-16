@@ -76,7 +76,7 @@ require('lspconfig').jsonls.setup {
 }
 
 vim.cmd [[
-  autocmd BufWritePre *.json,*.jsonc lua vim.lsp.buf.formatting()
+  autocmd BufWritePre *.json,*.jsonc lua vim.lsp.buf.formatting_sync()
 ]]
 
 
