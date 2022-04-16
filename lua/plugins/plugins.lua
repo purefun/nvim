@@ -18,7 +18,6 @@ return {
   -- 'numToStr/Comment.nvim',
   'tpope/vim-surround',
   'tpope/vim-repeat',
-  'junegunn/vim-easy-align',
   'jiangmiao/auto-pairs',
   'dhruvasagar/vim-table-mode',
   'mattn/emmet-vim',
@@ -73,4 +72,8 @@ return {
   -- completion --------------------------------------------------
 
   -- { 'neoclide/coc.nvim', branch = 'release' },
+
+  -- editing -----------------------------------------------------
+
+  -- 'junegunn/vim-easy-align',
 }
