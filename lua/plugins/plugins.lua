@@ -5,13 +5,13 @@ return {
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
   "hrsh7th/nvim-cmp",
+  "nvim-lua/lsp-status.nvim",
   "kyazdani42/nvim-tree.lua",
   "ggandor/lightspeed.nvim",
   "folke/zen-mode.nvim",
   "neovim/nvim-lspconfig",
   "kyazdani42/nvim-web-devicons",
   'voldikss/vim-floaterm',
-  -- 'glepnir/galaxyline.nvim',
   'rktjmp/lush.nvim',
   'liuchengxu/vista.vim',
   'tpope/vim-commentary',
@@ -46,8 +46,6 @@ return {
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
   { 'Shougo/defx.nvim', run = ':UpdateRemotePlugins' },
   { 'obaland/vfiler.vim' },
-  { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } },
-  -- { 'neoclide/coc.nvim', branch = 'release' },
   {
     'nvim-telescope/telescope.nvim',
     requires = {
@@ -60,4 +58,19 @@ return {
       {'edolphin-ydf/goimpl.nvim'},
     }
   },
+
+  -- statusline --------------------------------------------------
+
+  'feline-nvim/feline.nvim',
+  'SmiteshP/nvim-gps',
+  -- 'glepnir/galaxyline.nvim',
+  -- lualine has a glitch when switch buffers
+  -- {
+  --   'nvim-lualine/lualine.nvim',
+  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+  -- },
+
+  -- completion --------------------------------------------------
+
+  -- { 'neoclide/coc.nvim', branch = 'release' },
 }
