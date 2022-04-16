@@ -62,3 +62,21 @@ vim.cmd [[
   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
 ]]
 
+-- repo: https://github.com/hrsh7th/vscode-langservers-extracted
+-- install: yarn global add vscode-langservers-extracted
+
+require('lspconfig').jsonls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas(),
+    },
+  },
+}
+
+vim.cmd [[
+  autocmd BufWritePre *.json,*.jsonc lua vim.lsp.buf.formatting()
+]]
+
+

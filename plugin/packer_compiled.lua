@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
   ["defx.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/defx.nvim",
@@ -244,6 +249,11 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/rest.nvim",
     url = "https://github.com/NTBBloodbath/rest.nvim"
   },
+  ["schemastore.nvim"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
+    url = "https://github.com/b0o/schemastore.nvim"
+  },
   ["telescope-coc.nvim"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/telescope-coc.nvim",
@@ -283,11 +293,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-easy-align"] = {
-    loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-easy-align",
-    url = "https://github.com/junegunn/vim-easy-align"
   },
   ["vim-floaterm"] = {
     loaded = true,
@@ -333,6 +338,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["vim-youdao-translater"] = {
     loaded = true,

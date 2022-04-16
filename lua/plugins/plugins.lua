@@ -4,6 +4,9 @@ return {
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
+  "hrsh7th/cmp-vsnip",
+  "hrsh7th/vim-vsnip",
+  "hrsh7th/vim-vsnip-integ",
   "hrsh7th/nvim-cmp",
   "nvim-lua/lsp-status.nvim",
   "kyazdani42/nvim-tree.lua",
@@ -57,6 +60,8 @@ return {
       {'edolphin-ydf/goimpl.nvim'},
     }
   },
+
+  "b0o/schemastore.nvim",
 
   -- statusline --------------------------------------------------
 
