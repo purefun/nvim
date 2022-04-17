@@ -247,7 +247,7 @@ local theme = lush(function()
     -- LspDiagnosticsInformation         { }, -- used for "Information" diagnostic virtual text
     -- LspDiagnosticsInformationSign     { }, -- used for "Information" signs in sign column
     -- LspDiagnosticsInformationFloating { }, -- used for "Information" diagnostic messages in the diagnostics float
-    -- LspDiagnosticsHint                { }, -- used for "Hint" diagnostic virtual text
+    DiagnosticHint { fg = gray5, bg = nil },
     -- LspDiagnosticsHintSign            { }, -- used for "Hint" diagnostic signs in sign column
     -- LspDiagnosticsHintFloating        { }, -- used for "Hint" diagnostic messages in the diagnostics float
     -- LspReferenceText                  { }, -- used for highlighting "text" references
