@@ -62,6 +62,7 @@ return {
   },
 
   "b0o/schemastore.nvim",
+  "ray-x/lsp_signature.nvim",
 
   -- statusline --------------------------------------------------
 
