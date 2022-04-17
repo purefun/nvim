@@ -61,8 +61,11 @@ return {
     }
   },
 
+  { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' },
+
   "b0o/schemastore.nvim",
-  "ray-x/lsp_signature.nvim",
+  -- "ray-x/lsp_signature.nvim",
+  'hrsh7th/cmp-nvim-lsp-signature-help',
 
   -- statusline --------------------------------------------------
 
