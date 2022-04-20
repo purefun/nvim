@@ -67,6 +67,9 @@ return {
   -- "ray-x/lsp_signature.nvim",
   'hrsh7th/cmp-nvim-lsp-signature-help',
 
+  'jose-elias-alvarez/null-ls.nvim',
+  'MunifTanjim/prettier.nvim',
+
   -- statusline --------------------------------------------------
 
   'feline-nvim/feline.nvim',

@@ -68,10 +68,6 @@ require('lspconfig').sumneko_lua.setup {
 -- install: yarn global add vscode-langservers-extracted
 require'lspconfig'.eslint.setup {}
 
-vim.cmd [[
-  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
-]]
-
 -- repo: https://github.com/hrsh7th/vscode-langservers-extracted
 -- install: yarn global add vscode-langservers-extracted
 
@@ -85,16 +81,32 @@ require('lspconfig').jsonls.setup {
   },
 }
 
-vim.cmd [[
-  autocmd BufWritePre *.json,*.jsonc lua vim.lsp.buf.formatting_sync()
-]]
-
 -- repo: https://github.com/prisma/language-tools/tree/main/packages/language-server
 -- install: yarn global add @prisma/language-server
 require'lspconfig'.prismals.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
+
+-- repo: https://github.com/golang/tools/tree/master/gopls
+-- install: go install golang.org/x/tools/gopls@latest
+require'lspconfig'.gopls.setup{
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+
+
+vim.cmd [[
+  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js lua vim.lsp.buf.formatting_sync()
+  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
+  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js Prettier
+]]
+
+
+vim.cmd [[
+  autocmd BufWritePre *.json,*.jsonc lua vim.lsp.buf.formatting_sync()
+]]
+
 
 vim.cmd [[
   autocmd BufWritePre *.prisma lua vim.lsp.buf.formatting_sync()
