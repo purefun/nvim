@@ -204,11 +204,6 @@ _G.packer_plugins = {
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
-  ["nvim-gps"] = {
-    loaded = true,
-    path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/nvim-gps",
-    url = "https://github.com/SmiteshP/nvim-gps"
-  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/Users/Nil/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",

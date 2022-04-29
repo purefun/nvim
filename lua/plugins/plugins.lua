@@ -52,6 +52,7 @@ return {
   'feline-nvim/feline.nvim',
   'voldikss/vim-floaterm',
   'norcalli/nvim-colorizer.lua',
+  'folke/which-key.nvim',
   -- 'glepnir/galaxyline.nvim',
   --  nvim-lualine/lualine.nvim',
 
