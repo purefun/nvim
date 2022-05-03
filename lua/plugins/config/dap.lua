@@ -1,5 +1,15 @@
 local dap = require('dap')
 
+dap.listeners.after['event_initialized']['my-plugin'] = function(session, body)
+    vim.keymap.set('n', '<C-n>', require('dap').step_over)
+    print("dap initialized")
+end
+
+dap.listeners.before['event_terminated']['my-plugin'] = function(session, body)
+    vim.keymap.del('n', '<C-n>')
+    print("dap terminated")
+end
+
 -- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#go-using-delve-directly
 
 -- dap.adapters.go = function(callback, config)
