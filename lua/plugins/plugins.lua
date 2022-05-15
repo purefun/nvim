@@ -31,6 +31,7 @@ return {
   'williamboman/nvim-lsp-installer',
   "simrat39/symbols-outline.nvim",
   'jose-elias-alvarez/null-ls.nvim',
+  'folke/trouble.nvim',
   -- "nvim-lua/lsp-status.nvim",
   -- "ray-x/lsp_signature.nvim",
 
@@ -50,9 +51,10 @@ return {
 -- UI ----------------------------------------------------------
 
   'feline-nvim/feline.nvim',
-  'voldikss/vim-floaterm',
+  'akinsho/toggleterm.nvim',
   'norcalli/nvim-colorizer.lua',
   'folke/which-key.nvim',
+  -- 'voldikss/vim-floaterm',
   -- 'glepnir/galaxyline.nvim',
   --  nvim-lualine/lualine.nvim',
 
@@ -72,6 +74,7 @@ return {
   "b0o/schemastore.nvim",
   'ray-x/go.nvim',
   'fatih/vim-go',
+  { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' },
 
 -- Debug -------------------------------------------------------
 

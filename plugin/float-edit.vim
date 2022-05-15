@@ -42,5 +42,3 @@ function! FloatingWindowEdit(query) abort
 endfunction
 
 command! -complete=file -nargs=? Fe call FloatingWindowEdit(<q-args>)
-
-nnoremap <leader>bb :Fe ~/notebook/BBL/activities.md<CR>

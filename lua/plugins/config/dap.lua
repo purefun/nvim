@@ -1,12 +1,20 @@
 local dap = require('dap')
 
 dap.listeners.after['event_initialized']['my-plugin'] = function(session, body)
-    vim.keymap.set('n', '<C-n>', require('dap').step_over)
+    vim.keymap.set('n', '<C-j>', require('dap').step_over)
+    -- <C-i> why not working ?
+    -- vim.keymap.set('n', '<C-i>', require('dap').step_into)
+    vim.keymap.set('n', '<Enter>', require('dap').step_into)
+    vim.keymap.set('n', '<BS>', require('dap').step_out)
+    vim.keymap.set('n', '<C-l>', require('dap').run_to_cursor)
     print("dap initialized")
 end
 
 dap.listeners.before['event_terminated']['my-plugin'] = function(session, body)
-    vim.keymap.del('n', '<C-n>')
+    vim.keymap.del('n', '<C-j>')
+    vim.keymap.del('n', '<Enter>')
+    vim.keymap.del('n', '<BS>')
+    vim.keymap.del('n', '<C-l>')
     print("dap terminated")
 end
 

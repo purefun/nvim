@@ -95,9 +95,20 @@ require'lspconfig'.gopls.setup{
   on_attach = on_attach,
 }
 
+require'lspconfig'.yamlls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  -- settings = {
+    -- yaml = {
+
+    -- }
+  -- }
+}
+
+
+  -- autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js lua vim.lsp.buf.formatting_sync()
 
 vim.cmd [[
-  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js lua vim.lsp.buf.formatting_sync()
   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js Prettier
 ]]
