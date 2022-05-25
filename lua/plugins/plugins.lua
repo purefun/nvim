@@ -51,10 +51,10 @@ return {
 -- UI ----------------------------------------------------------
 
   'feline-nvim/feline.nvim',
+  'voldikss/vim-floaterm',
   'akinsho/toggleterm.nvim',
   'norcalli/nvim-colorizer.lua',
   'folke/which-key.nvim',
-  -- 'voldikss/vim-floaterm',
   -- 'glepnir/galaxyline.nvim',
   --  nvim-lualine/lualine.nvim',
 
@@ -85,6 +85,7 @@ return {
 
 -- others ------------------------------------------------------
 
+  'mickael-menu/zk-nvim',
   'MunifTanjim/prettier.nvim',
   "folke/zen-mode.nvim",
   'rktjmp/lush.nvim',

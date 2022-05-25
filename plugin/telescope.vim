@@ -11,6 +11,7 @@ nnoremap <silent>sq :Telescope quickfix<cr>
 nnoremap <silent>sc :Telescope commands<cr>
 nnoremap <silent>sn :Telescope node_modules list<cr>
 nnoremap <silent>sr :Telescope registers<cr>
+nnoremap <silent>st :ToggleTerm<cr>
 " nnoremap <silent>sr :Telescope resume<cr>
 " git checkout
 nnoremap <silent>sib :Telescope git_branches<cr> 
