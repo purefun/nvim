@@ -6,7 +6,3 @@ require 'autocmd'
 require 'reload'
 require 'settings'
 require 'plugins'
-
-require("zk").setup {
-  picker = "telescope"
-}
